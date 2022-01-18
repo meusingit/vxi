@@ -1,4 +1,3 @@
-# Generated automatically from Makefile.in by configure.
 #
 # Copyright 1999-2000,2004 The Apache Software Foundation.
 # 
@@ -32,11 +31,11 @@
 #all these setting come from the arguments passed in to runConfigure.
 PLATFORM = LINUX
 CC  = gcc
-CXX = c++
+CXX = g++
 CXXVER = 
 PREFIX = /usr/local
-MESSAGELOADER=
-TRANSCODER=
+MESSAGELOADER=INMEM
+TRANSCODER=NATIVE
 
 GCC = yes
 GXX = yes

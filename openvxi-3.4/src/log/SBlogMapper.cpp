@@ -43,9 +43,9 @@ namespace std
 #define MODULE_NAME MODULE_PREFIX L"SBlog"
 
 #ifdef HAVE_XERCES
-#include <util/PlatformUtils.hpp>       // Xerces headers
-#include <parsers/SAXParser.hpp>
-#include <sax/HandlerBase.hpp>
+#include </home/pi/Development/Repos/3.4/xerces-c-src_2_6_0/src/xercesc/util/PlatformUtils.hpp>       // Xerces headers
+#include </home/pi/Development/Repos/3.4/xerces-c-src_2_6_0/src/xercesc/parsers/SAXParser.hpp>
+#include </home/pi/Development/Repos/3.4/xerces-c-src_2_6_0/src/xercesc/sax/HandlerBase.hpp>
 using namespace xercesc;
 #else
 #pragma message("WARNING: HAVE_XERCES not defined, need Apache Xerces to enable the XML error text lookup feature")

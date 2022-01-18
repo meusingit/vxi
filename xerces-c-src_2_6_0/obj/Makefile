@@ -1,4 +1,3 @@
-# Generated automatically from Makefile.in by configure.
 #
 # Copyright 1999-2004 The Apache Software Foundation.
 # 
@@ -31,17 +30,17 @@
 
 PLATFORM = LINUX
 CC  = gcc
-CXX = c++
+CXX = g++
 CXXVER = 
 GCC = yes
 GXX = yes
 PREFIX = /usr/local
-LDFLAGS = 
-LIBS = 
+LDFLAGS =    
+LIBS =   -lpthread 
 OSVER = 
-TRANSCODER = 
-MESSAGELOADER = 
-BITSTOBUILD = 
+TRANSCODER = NATIVE
+MESSAGELOADER = INMEM
+BITSTOBUILD = 32
 
 include ../version.incl
 include ../src/xercesc/Makefile.incl

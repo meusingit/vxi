@@ -1,4 +1,3 @@
-# Generated automatically from Makefile.in by configure.
 #
 # Copyright 1999-2000,2004 The Apache Software Foundation.
 # 
@@ -21,7 +20,7 @@ COMPILER = @compiler@
 GCC = yes
 GXX = yes
 PREFIX = /usr/local
-THREADS = 
+THREADS = pthread
 PREFIX_INCLUDE = ${PREFIX}/include/xercesc
 include ../../../Makefile.incl
 
