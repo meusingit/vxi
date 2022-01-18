@@ -25,7 +25,6 @@
 #include "VXItrd.h"
 
 SSL_CTX *SBinetSSLsocket::_ctx = NULL;
-SSL_METHOD *SBinetSSLsocket::_meth = NULL;
 
 static VXItrdMutex ** sslMutex = NULL;
 
@@ -147,9 +146,8 @@ static int thread_setup()
 int SBinetSSLsocket::initialize()
 {
   SSLeay_add_ssl_algorithms();
-  _meth = SSLv23_client_method();
   SSL_load_error_strings();
-  _ctx = SSL_CTX_new (_meth);
+  _ctx = SSL_CTX_new (SSLv23_client_method());
   if (_ctx == NULL) return -1;
 
   SSL_CTX_set_mode(_ctx, SSL_MODE_AUTO_RETRY);

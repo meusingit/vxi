@@ -27,7 +27,7 @@
 #define _SBINETSTRINGSTL_HPP__
 
 #include "SBinetInternal.h"
-
+#include <cstring>
 // Highly efficient STL wstring implementation, use a wrapper to
 // ensure we don't go beyond a specific subset of functionality that
 // will break the non-STL implementation

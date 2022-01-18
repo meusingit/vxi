@@ -61,7 +61,7 @@ class SBinetSSLsocket: public SWIsocket
   virtual int sendto	(const SWIipAddress& sa, const void* buf, int len, int msgf=0);
 
   virtual SWIstream::Result shutdown(shuthow sh);
-  virtual SWIstream::Result SBinetSSLsocket::close();
+  virtual SWIstream::Result close();
 
   /**
    * Disabled copy constructor.
