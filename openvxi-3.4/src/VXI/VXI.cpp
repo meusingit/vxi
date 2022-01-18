@@ -400,7 +400,7 @@ bool VXI::DeclareExternalEvent(const VXIchar * event, const VXIchar * message)
 
   mutex.Lock();
   externalEvents.push_back(event);
-  if (message == NULL || message == L'\0')
+  if (message == NULL )
     externalMessages.push_back(event);
   else
     externalMessages.push_back(message);

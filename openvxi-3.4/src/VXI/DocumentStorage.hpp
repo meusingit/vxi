@@ -24,7 +24,7 @@
 #include "VXMLDocument.hpp"          // for VXMLDocument and document model
 #include "VXItrd.h"                  // for ThreadMutex
 #include <map>
-
+#include <cstring>
 class DocumentStorageKey {
 public:
   DocumentStorageKey()
